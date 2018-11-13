@@ -9,7 +9,7 @@ UCRETLENDIRME = [
 
 class Card (models.Model):
     tarife_adi = models.CharField(max_length=50)
-    tarife_slug = models.CharField(max_length=20)
+    tarife_slug = models.CharField(max_length=20, unique=True)
     ucretlendirme = models.CharField(choices=UCRETLENDIRME, max_length=9)
     ana_tarife = models.CharField(max_length=40)
     fiyat = models.FloatField(null=True, blank=True)

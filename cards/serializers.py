@@ -12,4 +12,4 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 class CardSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Card
-        fields = ('tarife_adi', 'tarife_slug', 'fiyat', 'taahhutsuz_fiyat', 'sms', 'dakika', 'internet')
+        fields = ('tarife_adi', 'tarife_slug', 'ucretlendirme', 'ana_tarife', 'fiyat', 'taahhutsuz_fiyat', 'sms', 'dakika', 'internet')
